@@ -87,4 +87,9 @@ class ItemController extends AbstractController
             header('Location:/item/index');
         }
     }
+
+    public function navbar()
+    {
+        return $this->twig->render('item/navbar.html.twig');
+    }
 }
